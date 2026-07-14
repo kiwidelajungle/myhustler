@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compte confirmé — MyHustle</title>
+<style>
+  :root{
+    --onyx:#1C1B1A;
+    --onyx-soft:#26241F;
+    --pearl:#F4F1EC;
+    --muted:#A8A29A;
+    --lime:#C6F432;
+    --line:#373430;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--onyx);
+    color:var(--pearl);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+  .card{
+    max-width:440px;
+    width:100%;
+    background:var(--onyx-soft);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:44px 32px;
+    text-align:center;
+  }
+  .logo{font-size:24px;font-weight:800;letter-spacing:.5px;margin-bottom:28px}
+  .logo span{color:var(--lime)}
+  .check{
+    width:72px;height:72px;border-radius:50%;
+    background:var(--lime);
+    display:flex;align-items:center;justify-content:center;
+    margin:0 auto 24px;
+    font-size:34px;
+  }
+  h1{font-size:24px;font-weight:800;letter-spacing:-.01em;margin-bottom:12px}
+  p{color:var(--muted);font-size:15px}
+  .steps{
+    margin-top:28px;
+    background:var(--onyx);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:20px;
+    text-align:left;
+    font-size:14px;
+    color:var(--pearl);
+  }
+  .steps div{display:flex;gap:10px;align-items:baseline}
+  .steps div + div{margin-top:10px}
+  .steps b{color:var(--lime)}
+  footer{margin-top:28px;font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">My<span>Hustle</span></div>
+    <div class="check">✓</div>
+    <h1>Ton compte est confirmé !</h1>
+    <p>Ton email est vérifié, tout est prêt.</p>
+    <div class="steps">
+      <div><b>1.</b><span>Retourne dans l'app MyHustle sur ton téléphone</span></div>
+      <div><b>2.</b><span>Connecte-toi avec ton email et ton mot de passe</span></div>
+      <div><b>3.</b><span>Choisis ton premier business et lance-toi 🚀</span></div>
+    </div>
+    <footer>© 2026 MyHustle — Ton premier euro commence ici.</footer>
+  </div>
+</body>
+</html>
